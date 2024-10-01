@@ -1,7 +1,7 @@
 {
-  "name": "Simple PWA",
+  "name": "Simple PWA with Firebase",
   "short_name": "PWA",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "description": "A simple PWA with Firebase Push Notifications",
