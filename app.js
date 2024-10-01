@@ -23,7 +23,7 @@ navigator.serviceWorker.register('./firebase-messaging-sw.js')
 document.getElementById('subscribe').addEventListener('click', function() {
     Notification.requestPermission().then(function(permission) {
         if (permission === 'granted') {
-            messaging.getToken({ vapidKey: 'YOUR_PUBLIC_VAPID_KEY' }).then(function(currentToken) {
+            messaging.getToken({ vapidKey: 'BKbfR-dJOmXb1zTyI7cSUEcG4C0zDWIHO3pPiHFAK0g4g6bSF4O7q_9qABNQ-CBcRREH51FUSRDFhCSbei6z6ZM' }).then(function(currentToken) {
                 if (currentToken) {
                     console.log('FCM токен:', currentToken);
                     alert('Subscribed to Push Notifications!');
